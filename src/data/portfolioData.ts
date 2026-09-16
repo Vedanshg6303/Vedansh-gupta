@@ -45,8 +45,8 @@ export interface EducationItem {
 export const PERSONAL_INFO = {
   name: 'Vedansh Gupta',
   tagline: 'Full-Stack Developer & Cybersecurity Specialist',
-  signatureOneLiner: 'Engineering zero-compromise digital architectures where intuitive design meets impenetrable security.',
-  secondaryQuote: 'Building resilient systems with pixel-level perfection and cryptographic precision.',
+  signatureOneLiner: "Building reliable, user-first software that solves real-world problems — engineered for scale, crafted with care, and secured from the ground up.",
+  secondaryQuote: "Write clean code today that scales tomorrow, and always build products people can trust.",
   headline: 'Architecting High-Performance Full-Stack Applications & Resilient Security Frameworks',
   bio: 'Computer Science and Engineering undergraduate specializing in Cybersecurity and Full-Stack Web Development at PSIT Kanpur. Experienced in building secure, transactional platforms, biometric identity-gated frameworks, and real-time community ecosystems. Driven by a deep passion for writing clean code, preventing security vulnerabilities, and scaling modern web applications.',
   email: 'vedanshg112@gmail.com',
