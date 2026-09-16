@@ -238,7 +238,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     company: 'PSIT Vyomnauts',
     role: 'Event Coordinator & Technical Lead',
     location: 'Kanpur, UP',
-    period: '2024 – Present',
+    period: '2024 – 2025',
     description: [
       'Organized large-scale technical hackathons and tech exhibitions at PSIT, driving cross-functional task distribution and logistics.',
       'Mentored junior students on full-stack web development best practices, version control workflows, and project presentation.',
@@ -259,7 +259,7 @@ export const EDUCATION: EducationItem[] = [
     score: 'CGPA: 7.40 / 10.0',
     highlights: [
       'Specializing in Information Security, Cryptography, Network Defense, and Secure Software Engineering.',
-      'Active leadership coordinator at PSIT Vyomnauts club.'
+      'Event coordinator & leadership at PSIT Vyomnauts club (2024 – 2025).'
     ],
   },
   {

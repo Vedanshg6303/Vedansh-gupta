@@ -47,7 +47,7 @@ EXPERIENCE
 - DevLaunch (IIT Kharagpur) — Tech & Management Intern (Dec 2024 – Mar 2025)
   * Spearheaded targeted outreach campaigns across student communities, accelerating technical user signups.
   * Assisted with frontend enhancements, landing page UI tasks, and technical documentation using HTML, CSS, JavaScript, and Git.
-- Event Coordinator — PSIT Vyomnauts
+- Event Coordinator — PSIT Vyomnauts (2024 – 2025)
   * Organized technical hackathons and tech exhibitions, directing cross-functional task distribution.
 
 KEY PROJECTS
@@ -243,7 +243,7 @@ CERTIFICATIONS
             <ul className="space-y-1.5 pl-4 list-disc text-xs text-slate-300">
               <li><strong className="text-white">Infosys Technical Certification:</strong> Verified competencies in HTML, CSS, and structured Python 3 application development.</li>
               <li><strong className="text-white">AI Tools Specialist (be10x):</strong> Professional validation in deploying modern AI workflows to accelerate full-stack engineering cycles.</li>
-              <li><strong className="text-white">Event Coordinator — PSIT Vyomnauts:</strong> Organized technical hackathons and tech exhibitions, directing cross-functional task distribution.</li>
+              <li><strong className="text-white">Event Coordinator — PSIT Vyomnauts (2024 – 2025):</strong> Organized technical hackathons and tech exhibitions, directing cross-functional task distribution.</li>
             </ul>
           </div>
 
