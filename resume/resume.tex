@@ -1,7 +1,7 @@
 %-------------------------
-% Resume in LaTeX (Guaranteed 1-Page Fit)
+% Resume in LaTeX (Full-Page ATS-Optimized Layout)
 % Author: Vedansh Gupta
-% Template: Jake's ATS-Friendly Template
+% Template: Jake's ATS-Friendly Template (Calibrated for Complete 1-Page Coverage)
 % License: MIT
 %-------------------------
 
@@ -20,17 +20,17 @@
 \usepackage{tabularx}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Tight margins for perfect 1-page fit
-\addtolength{\oddsidemargin}{-0.55in}
-\addtolength{\evensidemargin}{-0.55in}
-\addtolength{\textwidth}{1.1in}
-\addtolength{\topmargin}{-0.65in}
-\addtolength{\textheight}{1.3in}
+% Balanced 0.5in margins to fill the complete letter sheet top-to-bottom
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.52in}
+\addtolength{\textheight}{1.08in}
 
 \urlstyle{same}
 
@@ -40,35 +40,35 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{3pt}]
 
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-1pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{1pt}\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-4pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-  \vspace{-2pt}\item
+  \vspace{1pt}\item
     \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
       #1 & #2 \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-4pt}
 }
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -87,15 +87,23 @@
     Kanpur, UP
 \end{center}
 
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Final-year Computer Science and Engineering student at PSIT Kanpur specializing in Cybersecurity and Full-Stack Web Development. Proficient in architecting scalable distributed applications, building identity-gated biometric authentication layers, and leading cross-functional technical and cultural initiatives. Combines practical software engineering velocity with defensive security protocols.
+    }}
+ \end{itemize}
+
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Pranveer Singh Institute of Technology (PSIT)}{Kanpur, UP}
-      {B.Tech in Computer Science \& Engineering (Cybersecurity) \textnormal{-- CGPA: 7.40/10.0}}{2023 -- 2027}
+      {B.Tech in Computer Science \& Engineering (Cybersecurity) \textnormal{--} \textbf{CGPA: 7.40 / 10.0}}{2023 -- 2027}
     \resumeSubheading
       {Spring Dales Higher Secondary School (UP Board)}{Kanpur, UP}
-      {Class XII: 75.5\% \textnormal{(2021--2022)} \quad $|$ \quad Class X: 83.5\% \textnormal{(2019--2020)}}{2019 -- 2022}
+      {Class XII (Senior Secondary): \textbf{75.5\%} \quad $|$ \quad Class X (Secondary Examination): \textbf{83.5\%}}{2019 -- 2022}
   \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
@@ -103,7 +111,7 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: C++, Java, Python, JavaScript (ES6+), TypeScript, HTML5, CSS3, SQL} \\
-     \textbf{Frontend \& Backend}{: React.js (v18), Node.js, Express.js, RESTful APIs, WebSockets (Socket.io), MongoDB, MySQL, Tailwind CSS} \\
+     \textbf{Frontend \& Backend}{: React.js (v18), Node.js, Express.js, RESTful APIs, WebSockets (Socket.io), MongoDB, MySQL, Tailwind CSS, Vite} \\
      \textbf{Cybersecurity \& CS Core}{: Biometric Auth, Zero-Trust Architecture, JWT, RBAC, Data Structures \& Algorithms, OOPS, DBMS, OS, TCP/IP} \\
      \textbf{Tools \& Cloud Platforms}{: Git, GitHub, VS Code, Postman, Vercel, Render, Linux CLI, Generative AI Tools}
     }}
@@ -113,24 +121,26 @@
 \section{Key Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{\href{https://tridrishti-api.vercel.app}{\underline{Tridrishti}}} $|$ \emph{React 18, Node.js, Express, MongoDB, Socket.io, Vite}}{2026}
+          {\textbf{\href{https://tridrishti-api.vercel.app}{\underline{Tridrishti}}} $|$ \emph{React 18, Node.js, Express, MongoDB, Socket.io, Tailwind CSS, Vite}}{2026}
           \resumeItemListStart
-            \resumeItem{Architected a gamified community platform with 40+ dynamic pages, a 10-tier progression matrix, and multi-role RBAC.}
-            \resumeItem{Engineered an atomic points ledger and real-time WebSocket sync for live downline tree updates and automated benefit claims.}
+            \resumeItem{Architected an enterprise gamified community platform featuring 40+ dynamic routes, a 10-tier user progression matrix, and multi-role RBAC.}
+            \resumeItem{Engineered an automated double-entry ledger engine handling atomic reward point balances, downline network propagation, and claim audits.}
+            \resumeItem{Integrated real-time WebSockets (Socket.io) for live balance updates and downline tree sync; deployed live on Render and Vercel cloud.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/Vedanshg6303}{\underline{Guardian-ID}}} $|$ \emph{Python, Computer Vision, Biometrics, REST APIs}}{Feb 2026 -- Present}
+          {\textbf{\href{https://github.com/Vedanshg6303}{\underline{Guardian-ID}}} $|$ \emph{Python, Computer Vision, Biometrics, REST APIs, Cryptography}}{Feb 2026 -- Present}
           \resumeItemListStart
-            \resumeItem{Developed an identity-gated security layer mitigating account takeover risks in shared device digital payment environments.}
-            \resumeItem{Integrated real-time computer vision face recognition and multi-profile fingerprint validation for step-up transaction auth.}
+            \resumeItem{Developed an identity-gated security layer designed to eliminate account takeover vulnerabilities in shared device digital payment environments.}
+            \resumeItem{Integrated real-time computer vision facial recognition coupled with multi-profile fingerprint validation for step-up transaction authorization.}
+            \resumeItem{Engineered zero-trust session validation tokens and modular RESTful middleware compatible with open-banking payment standards.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{\href{https://github.com/Vedanshg6303}{\underline{Interactive Music Web App}}} $|$ \emph{JavaScript, HTML5 Audio API, CSS3, Web Systems}}{Mar 2024 -- Jun 2024}
           \resumeItemListStart
-            \resumeItem{Architected a lightweight web audio streaming engine optimized for fluid cross-platform browser playback with zero audio lag.}
-            \resumeItem{Implemented custom queue logic, timeline scrub controls, and responsive playlist management using native HTML5 Audio.}
+            \resumeItem{Architected a lightweight web audio streaming engine optimized for fluid cross-platform browser playback with zero audio buffering lag.}
+            \resumeItem{Implemented custom queue logic, timeline scrub controls, and responsive playlist state management utilizing native HTML5 Audio APIs.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -142,7 +152,7 @@
       {Tech \& Management Intern}{Dec 2024 -- Mar 2025}
       \resumeItemListStart
         \resumeItem{Spearheaded targeted technical outreach campaigns across student developer communities, accelerating onboarding and user signups.}
-        \resumeItem{Assisted with frontend UI enhancements, landing page components, and technical documentation using HTML, CSS, JavaScript, and Git.}
+        \resumeItem{Assisted engineering squads with frontend UI enhancements, landing page components, and technical documentation using HTML, CSS, and Git.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -150,7 +160,7 @@
       {Dance \& Event Head}{2024 -- 2025}
       \resumeItemListStart
         \resumeItem{Directed event operations, audio-visual stage logistics, and budget allocation for university-level annual cultural productions.}
-        \resumeItem{Choreographed and managed a 40+ member student dance troupe and backstage crew under high-stakes live performance delivery.}
+        \resumeItem{Choreographed and directed a 40+ member student dance troupe and backstage crew under high-stakes live performance delivery.}
       \resumeItemListEnd
 
     \resumeSubheading
