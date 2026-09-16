@@ -41,6 +41,9 @@ TECHNICAL SKILLS
 - Tools & Platforms: Git, GitHub, VS Code, Postman, Vercel, Render, Generative AI Tools
 
 EXPERIENCE
+- Navrang Cultural Club (PSIT) — Dance & Event Head (2024 – 2025)
+  * Led and choreographed flagship cultural dance productions and live stage performances for annual university festivals.
+  * Directed end-to-end event planning, stage logistics, audio-visual coordination, and student crew management.
 - DevLaunch (IIT Kharagpur) — Tech & Management Intern (Dec 2024 – Mar 2025)
   * Spearheaded targeted outreach campaigns across student communities, accelerating technical user signups.
   * Assisted with frontend enhancements, landing page UI tasks, and technical documentation using HTML, CSS, JavaScript, and Git.

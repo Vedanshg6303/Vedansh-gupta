@@ -209,6 +209,19 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
+    company: "Navrang Cultural Club (PSIT)",
+    role: "Dance & Event Head",
+    location: "Kanpur, UP",
+    period: "2024 – 2025",
+    description: [
+      "Led and choreographed flagship cultural dance productions and live stage performances for annual university cultural festivals.",
+      "Directed end-to-end event planning, scheduling, stage logistics, sound/lighting coordination, and artist management.",
+      "Fostered high-energy team collaboration and discipline across a troupe of 40+ performers and student crew under high-stakes live environments."
+    ],
+    skills: ["Event Direction", "Choreography & Dance", "Team Leadership", "Stage Production", "Logistics & Budgeting"],
+    type: "Leadership"
+  },
+  {
     company: 'DevLaunch (IIT Kharagpur)',
     role: 'Tech & Management Intern',
     location: 'Remote / Kanpur, UP',
