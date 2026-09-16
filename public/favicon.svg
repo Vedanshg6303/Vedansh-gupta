@@ -1,11 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F0FF" />
-      <stop offset="100%" stop-color="#8B5CF6" />
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF085" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#CA8A04" />
     </linearGradient>
   </defs>
-  <rect width="100" height="100" rx="24" fill="#080C14" />
-  <rect x="2" y="2" width="96" height="96" rx="22" fill="none" stroke="url(#cyberGrad)" stroke-width="3" opacity="0.6" />
-  <text x="50" y="62" font-family="'JetBrains Mono', monospace" font-size="34" font-weight="900" fill="url(#cyberGrad)" text-anchor="middle">VG</text>
+  <rect width="100" height="100" rx="24" fill="#060709" />
+  <rect x="2" y="2" width="96" height="96" rx="22" fill="none" stroke="url(#goldGrad)" stroke-width="3.5" opacity="0.8" />
+  <text x="50" y="62" font-family="'JetBrains Mono', monospace" font-size="34" font-weight="900" fill="url(#goldGrad)" text-anchor="middle">VG</text>
 </svg>

@@ -11,6 +11,7 @@ export interface Project {
   techStack: string[];
   liveUrl?: string;
   githubUrl?: string;
+  imageUrl: string;
   featured: boolean;
 }
 
@@ -44,6 +45,8 @@ export interface EducationItem {
 export const PERSONAL_INFO = {
   name: 'Vedansh Gupta',
   tagline: 'Full-Stack Developer & Cybersecurity Specialist',
+  signatureOneLiner: 'Engineering zero-compromise digital architectures where intuitive design meets impenetrable security.',
+  secondaryQuote: 'Building resilient systems with pixel-level perfection and cryptographic precision.',
   headline: 'Architecting High-Performance Full-Stack Applications & Resilient Security Frameworks',
   bio: 'Computer Science and Engineering undergraduate specializing in Cybersecurity and Full-Stack Web Development at PSIT Kanpur. Experienced in building secure, transactional platforms, biometric identity-gated frameworks, and real-time community ecosystems. Driven by a deep passion for writing clean code, preventing security vulnerabilities, and scaling modern web applications.',
   email: 'vedanshg112@gmail.com',
@@ -69,7 +72,7 @@ export const PROJECTS: Project[] = [
     title: 'Tridrishti Platform',
     subtitle: 'Full-Stack Community Empowerment & Gamified Rewards Ecosystem',
     badge: 'Live Production',
-    badgeColor: 'cyan',
+    badgeColor: 'gold',
     period: '2026',
     role: 'Full-Stack Developer',
     description: 'An enterprise-grade full-stack networking and gamified rewards platform featuring 40+ dynamic pages, a 10-tier user progression matrix, an atomic transaction ledger, and real-time downline network tree tracking.',
@@ -82,6 +85,7 @@ export const PROJECTS: Project[] = [
     techStack: ['React 18', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'Tailwind CSS', 'Vite'],
     liveUrl: 'https://tridrishti-api.vercel.app',
     githubUrl: 'https://github.com/Vedanshg6303/Tridrishti',
+    imageUrl: '/projects/tridrishti.jpg',
     featured: true,
   },
   {
@@ -89,7 +93,7 @@ export const PROJECTS: Project[] = [
     title: 'Guardian-ID',
     subtitle: 'Multi-User Biometric UPI Security Framework',
     badge: 'Cybersecurity & FinTech',
-    badgeColor: 'violet',
+    badgeColor: 'amber',
     period: 'Feb 2026 – Present',
     role: 'Lead Developer',
     description: 'An identity-gated security layer designed to mitigate account takeover and unauthorized transaction risks in shared financial environments and digital payment ecosystems.',
@@ -100,6 +104,7 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ['Python', 'Computer Vision', 'Biometrics', 'REST APIs', 'Open-Banking Protocols', 'Cryptography'],
     githubUrl: 'https://github.com/Vedanshg6303',
+    imageUrl: '/projects/guardian-id.jpg',
     featured: true,
   },
   {
@@ -107,17 +112,18 @@ export const PROJECTS: Project[] = [
     title: 'Interactive Music Web Application',
     subtitle: 'High-Performance Audio Streaming & Playlist Engine',
     badge: 'Web Systems',
-    badgeColor: 'emerald',
+    badgeColor: 'gold',
     period: 'Mar 2024 – Jun 2024',
     role: 'Frontend Engineer',
     description: 'A lightweight, responsive web audio streaming engine optimized for fluid cross-platform browser playback with zero audio lag and zero dependency bloat.',
     highlights: [
       'Architected custom audio queue logic, responsive timeline scrub controls, and seamless background playlist state management.',
       'Leveraged native HTML5 Audio APIs and vanilla JavaScript for minimal memory consumption and ultra-fast load times.',
-      'Crafted an intuitive dark glassmorphism interface with responsive track visualizations.'
+      'Crafted an intuitive dark glassmorphism interface with responsive track frequency visualizations.'
     ],
     techStack: ['JavaScript', 'HTML5 Audio API', 'CSS3', 'Web Audio', 'Responsive UI'],
     githubUrl: 'https://github.com/Vedanshg6303',
+    imageUrl: '/projects/music-app.jpg',
     featured: true,
   },
 ];
@@ -126,7 +132,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: 'Programming Languages',
     icon: 'Code2',
-    accentColor: '#00F0FF',
+    accentColor: '#F59E0B',
     skills: [
       { name: 'C++', level: 'Proficient' },
       { name: 'Java', level: 'Core & OOP' },
@@ -139,7 +145,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: 'Frontend Development',
     icon: 'Layout',
-    accentColor: '#38BDF8',
+    accentColor: '#EAB308',
     skills: [
       { name: 'React.js (v18)', level: 'Advanced' },
       { name: 'Tailwind CSS', level: 'Expert' },
@@ -152,7 +158,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: 'Backend & APIs',
     icon: 'Server',
-    accentColor: '#8B5CF6',
+    accentColor: '#D97706',
     skills: [
       { name: 'Node.js', level: 'Advanced' },
       { name: 'Express.js', level: 'Advanced' },
@@ -189,7 +195,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: 'Tools & DevOps',
     icon: 'Wrench',
-    accentColor: '#F59E0B',
+    accentColor: '#EAB308',
     skills: [
       { name: 'Git & GitHub', level: 'Advanced' },
       { name: 'VS Code', level: 'Daily Driver' },

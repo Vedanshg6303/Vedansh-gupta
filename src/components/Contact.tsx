@@ -23,7 +23,6 @@ export const Contact: React.FC = () => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
     
-    // Create mailto link with pre-filled content
     const mailtoLink = `mailto:${PERSONAL_INFO.email}?subject=${encodeURIComponent(
       formData.subject || `Inquiry from ${formData.name}`
     )}&body=${encodeURIComponent(
@@ -36,12 +35,12 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 relative bg-slate-950/60">
+    <section id="contact" className="py-24 relative bg-black/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-cyan-500/10 border border-cyan-500/25 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-lg bg-gold-500/10 border border-gold-500/30 text-xs font-mono text-gold-400 uppercase tracking-widest">
             <MessageSquare className="w-3.5 h-3.5" />
             <span>Direct Channels</span>
           </div>
@@ -59,16 +58,16 @@ export const Contact: React.FC = () => {
           <div className="lg:col-span-5 space-y-4">
             
             {/* Email Card with 1-Click Copy */}
-            <div className="p-6 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 transition-all flex items-center justify-between gap-4">
+            <div className="p-6 rounded-2xl glass-card-gold border border-gold-500/20 hover:border-gold-500/50 transition-all flex items-center justify-between gap-4">
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 shrink-0">
+                <div className="p-3 rounded-xl bg-gold-500/10 text-gold-400 border border-gold-500/20 shrink-0">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <div className="text-xs text-slate-400 font-mono">DIRECT EMAIL</div>
                   <a
                     href={`mailto:${PERSONAL_INFO.email}`}
-                    className="text-sm font-bold text-white hover:text-cyan-400 transition-colors break-all"
+                    className="text-sm font-bold text-white hover:text-gold-300 transition-colors break-all"
                   >
                     {PERSONAL_INFO.email}
                   </a>
@@ -76,7 +75,7 @@ export const Contact: React.FC = () => {
               </div>
               <button
                 onClick={() => handleCopy(PERSONAL_INFO.email, 'email')}
-                className="p-2 rounded-lg bg-slate-900 border border-slate-700 hover:border-cyan-400 text-slate-400 hover:text-cyan-300 transition-all"
+                className="p-2 rounded-lg bg-[#0C0E14] border border-slate-700 hover:border-gold-400 text-slate-400 hover:text-gold-300 transition-all"
                 title="Copy Email"
               >
                 {copiedEmail ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
@@ -84,16 +83,16 @@ export const Contact: React.FC = () => {
             </div>
 
             {/* Phone Card with 1-Click Copy */}
-            <div className="p-6 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/40 transition-all flex items-center justify-between gap-4">
+            <div className="p-6 rounded-2xl glass-card-gold border border-gold-500/20 hover:border-gold-500/50 transition-all flex items-center justify-between gap-4">
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/20 shrink-0">
+                <div className="p-3 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 shrink-0">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <div className="text-xs text-slate-400 font-mono">PHONE / WHATSAPP</div>
                   <a
                     href={`tel:${PERSONAL_INFO.phone}`}
-                    className="text-sm font-bold text-white hover:text-purple-400 transition-colors"
+                    className="text-sm font-bold text-white hover:text-gold-300 transition-colors"
                   >
                     {PERSONAL_INFO.phone}
                   </a>
@@ -101,7 +100,7 @@ export const Contact: React.FC = () => {
               </div>
               <button
                 onClick={() => handleCopy(PERSONAL_INFO.phone, 'phone')}
-                className="p-2 rounded-lg bg-slate-900 border border-slate-700 hover:border-purple-400 text-slate-400 hover:text-purple-300 transition-all"
+                className="p-2 rounded-lg bg-[#0C0E14] border border-slate-700 hover:border-gold-400 text-slate-400 hover:text-gold-300 transition-all"
                 title="Copy Phone Number"
               >
                 {copiedPhone ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
@@ -109,7 +108,7 @@ export const Contact: React.FC = () => {
             </div>
 
             {/* Location Card */}
-            <div className="p-6 rounded-2xl glass-card border border-slate-800 flex items-center gap-4">
+            <div className="p-6 rounded-2xl glass-card-gold border border-gold-500/20 flex items-center gap-4">
               <div className="p-3 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shrink-0">
                 <MapPin className="w-5 h-5" />
               </div>
@@ -118,36 +117,36 @@ export const Contact: React.FC = () => {
                 <div className="text-sm font-bold text-white">
                   {PERSONAL_INFO.location}
                 </div>
-                <div className="text-xs text-slate-300 mt-0.5">Open to Remote & Relocation</div>
+                <div className="text-xs text-slate-400 mt-0.5">Open to Remote & Relocation</div>
               </div>
             </div>
 
             {/* Social Links Matrix */}
-            <div className="p-6 rounded-2xl glass-card border border-slate-800 space-y-3">
+            <div className="p-6 rounded-2xl glass-card-gold border border-gold-500/20 space-y-3">
               <div className="text-xs font-mono text-slate-400">EXTERNAL PROFILES</div>
               <div className="flex flex-col gap-2.5">
                 <a
                   href={PERSONAL_INFO.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center justify-between p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/40 text-xs font-semibold text-slate-200 hover:text-cyan-300 transition-all"
+                  className="flex items-center justify-between p-3 rounded-xl bg-[#090C12] border border-slate-800 hover:border-gold-500/40 text-xs font-semibold text-slate-200 hover:text-gold-300 transition-all"
                 >
                   <span className="flex items-center gap-2">
-                    <Github className="w-4 h-4" /> GitHub: Vedanshg6303
+                    <Github className="w-4 h-4 text-gold-400" /> GitHub: Vedanshg6303
                   </span>
-                  <span className="font-mono text-[11px] text-cyan-400">&rarr;</span>
+                  <span className="font-mono text-[11px] text-gold-400">&rarr;</span>
                 </a>
 
                 <a
                   href={PERSONAL_INFO.linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center justify-between p-3 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-purple-500/40 text-xs font-semibold text-slate-200 hover:text-purple-300 transition-all"
+                  className="flex items-center justify-between p-3 rounded-xl bg-[#090C12] border border-slate-800 hover:border-gold-500/40 text-xs font-semibold text-slate-200 hover:text-gold-300 transition-all"
                 >
                   <span className="flex items-center gap-2">
-                    <Linkedin className="w-4 h-4" /> LinkedIn Profile
+                    <Linkedin className="w-4 h-4 text-gold-400" /> LinkedIn Profile
                   </span>
-                  <span className="font-mono text-[11px] text-purple-400">&rarr;</span>
+                  <span className="font-mono text-[11px] text-gold-400">&rarr;</span>
                 </a>
               </div>
             </div>
@@ -156,10 +155,10 @@ export const Contact: React.FC = () => {
 
           {/* Right Message Form (7 cols) */}
           <div className="lg:col-span-7">
-            <div className="p-7 sm:p-9 rounded-3xl glass-card border border-cyan-500/25 space-y-6">
+            <div className="p-7 sm:p-9 rounded-3xl glass-card-gold border border-gold-500/30 space-y-6">
               <div className="space-y-1">
                 <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                  <Sparkles className="w-4 h-4 text-cyan-400" />
+                  <Sparkles className="w-4 h-4 text-gold-400" />
                   <span>Send a Direct Message</span>
                 </h3>
                 <p className="text-xs text-slate-300">
@@ -184,7 +183,7 @@ export const Contact: React.FC = () => {
                       placeholder="e.g. Alex Morgan"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900/90 border border-slate-800 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400 text-sm text-white placeholder-slate-600 transition-all"
+                      className="w-full px-4 py-2.5 rounded-xl bg-[#0A0D14] border border-slate-800 focus:border-gold-400 focus:outline-none focus:ring-1 focus:ring-gold-400 text-sm text-white placeholder-slate-600 transition-all"
                     />
                   </div>
 
@@ -196,7 +195,7 @@ export const Contact: React.FC = () => {
                       placeholder="e.g. alex@company.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-900/90 border border-slate-800 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400 text-sm text-white placeholder-slate-600 transition-all"
+                      className="w-full px-4 py-2.5 rounded-xl bg-[#0A0D14] border border-slate-800 focus:border-gold-400 focus:outline-none focus:ring-1 focus:ring-gold-400 text-sm text-white placeholder-slate-600 transition-all"
                     />
                   </div>
                 </div>
@@ -208,7 +207,7 @@ export const Contact: React.FC = () => {
                     placeholder="e.g. Full-Stack Role / Project Collaboration"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-slate-900/90 border border-slate-800 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400 text-sm text-white placeholder-slate-600 transition-all"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#0A0D14] border border-slate-800 focus:border-gold-400 focus:outline-none focus:ring-1 focus:ring-gold-400 text-sm text-white placeholder-slate-600 transition-all"
                   />
                 </div>
 
@@ -220,13 +219,13 @@ export const Contact: React.FC = () => {
                     placeholder="Describe the opportunity, role requirements, or project details..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-slate-900/90 border border-slate-800 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400 text-sm text-white placeholder-slate-600 transition-all resize-none"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#0A0D14] border border-slate-800 focus:border-gold-400 focus:outline-none focus:ring-1 focus:ring-gold-400 text-sm text-white placeholder-slate-600 transition-all resize-none"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/35 hover:-translate-y-0.5 transition-all"
+                  className="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-yellow-500 hover:from-gold-400 hover:to-amber-400 text-slate-950 font-bold text-sm shadow-xl shadow-gold-500/20 hover:shadow-gold-500/35 hover:-translate-y-0.5 transition-all"
                 >
                   <Send className="w-4 h-4" />
                   <span>Send Message Directly</span>

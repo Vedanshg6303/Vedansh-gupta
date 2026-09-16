@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Download, Printer, Copy, Check, ExternalLink, Mail, Phone, MapPin, Award, CheckCircle } from 'lucide-react';
+import { X, Download, Printer, Copy, Check, ExternalLink, Mail, Phone, MapPin, Award } from 'lucide-react';
 import { PERSONAL_INFO, PROJECTS, EXPERIENCES, EDUCATION, CERTIFICATIONS } from '../data/portfolioData';
 
 interface ResumeModalProps {
@@ -21,6 +21,9 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 VEDANSH GUPTA
 ${PERSONAL_INFO.phone} | ${PERSONAL_INFO.email} | ${PERSONAL_INFO.location}
 GitHub: ${PERSONAL_INFO.github} | LinkedIn: ${PERSONAL_INFO.linkedin}
+
+SIGNATURE PHILOSOPHY
+"${PERSONAL_INFO.signatureOneLiner}"
 
 PROFESSIONAL SUMMARY
 Final-year Computer Science and Engineering student specializing in Cybersecurity and Full-Stack Web Development at PSIT Kanpur. Proficient in C++, Java, Python, JavaScript, and modern web frameworks (React 18, Node.js, Express, MongoDB). Experienced in building secure web applications, biometric authentication systems, and atomic transactional ledgers.
@@ -68,19 +71,19 @@ CERTIFICATIONS
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md animate-fadeIn">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-md animate-fadeIn">
       {/* Modal Card */}
-      <div className="bg-[#0D1321] border border-cyan-500/30 rounded-3xl w-full max-w-4xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
+      <div className="bg-[#0C0E14] border border-gold-500/35 rounded-3xl w-full max-w-4xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
         
         {/* Modal Header */}
-        <div className="p-5 sm:p-6 border-b border-slate-800 flex items-center justify-between bg-slate-900/60">
+        <div className="p-5 sm:p-6 border-b border-slate-800 flex items-center justify-between bg-[#080A0F]">
           <div className="flex items-center gap-2.5">
-            <div className="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/25">
+            <div className="p-2 rounded-lg bg-gold-500/10 text-gold-400 border border-gold-500/30">
               <Award className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-white">Official Curriculum Vitae</h3>
-              <p className="text-xs text-slate-300 font-mono">Vedansh Gupta • Software Engineer & Cybersecurity</p>
+              <h3 className="text-lg font-bold text-white">Curriculum Vitae</h3>
+              <p className="text-xs text-slate-400 font-mono">Vedansh Gupta &bull; Software Engineer &bull; Cybersecurity</p>
             </div>
           </div>
 
@@ -88,7 +91,7 @@ CERTIFICATIONS
           <div className="flex items-center gap-2">
             <button
               onClick={handleCopyText}
-              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-mono transition-all"
+              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#141824] hover:bg-slate-800 text-slate-200 border border-gold-500/25 text-xs font-mono transition-all"
               title="Copy Raw Text"
             >
               {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
@@ -97,7 +100,7 @@ CERTIFICATIONS
 
             <button
               onClick={handlePrint}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 text-xs font-mono transition-all"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gold-500/10 hover:bg-gold-500/20 text-gold-300 border border-gold-500/30 text-xs font-mono transition-all"
               title="Print / Save PDF"
             >
               <Printer className="w-3.5 h-3.5" />
@@ -106,7 +109,7 @@ CERTIFICATIONS
 
             <button
               onClick={onClose}
-              className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-all ml-1"
+              className="p-2 rounded-lg bg-[#141824] hover:bg-slate-800 text-slate-400 hover:text-white transition-all ml-1"
               title="Close Modal"
             >
               <X className="w-5 h-5" />
@@ -121,25 +124,30 @@ CERTIFICATIONS
           <div className="border-b border-slate-800 pb-6 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-4">
             <div>
               <h1 className="text-3xl font-extrabold text-white tracking-tight">VEDANSH GUPTA</h1>
-              <p className="text-cyan-400 font-medium text-sm mt-0.5">Full-Stack Developer & Cybersecurity Specialist</p>
+              <p className="text-gold-400 font-medium text-sm mt-0.5">Full-Stack Developer & Cybersecurity Specialist</p>
             </div>
 
             <div className="text-xs font-mono text-slate-300 text-center sm:text-right space-y-1">
               <div className="flex items-center sm:justify-end gap-1.5">
-                <Phone className="w-3.5 h-3.5 text-cyan-400" /> {PERSONAL_INFO.phone}
+                <Phone className="w-3.5 h-3.5 text-gold-400" /> {PERSONAL_INFO.phone}
               </div>
               <div className="flex items-center sm:justify-end gap-1.5">
-                <Mail className="w-3.5 h-3.5 text-cyan-400" /> {PERSONAL_INFO.email}
+                <Mail className="w-3.5 h-3.5 text-gold-400" /> {PERSONAL_INFO.email}
               </div>
               <div className="flex items-center sm:justify-end gap-1.5">
-                <MapPin className="w-3.5 h-3.5 text-cyan-400" /> {PERSONAL_INFO.location}
+                <MapPin className="w-3.5 h-3.5 text-gold-400" /> {PERSONAL_INFO.location}
               </div>
             </div>
           </div>
 
+          {/* Signature Philosophy */}
+          <div className="p-3 rounded-xl bg-gold-500/10 border border-gold-500/25 text-xs text-gold-200 italic">
+            "{PERSONAL_INFO.signatureOneLiner}"
+          </div>
+
           {/* Professional Summary */}
           <div className="space-y-2">
-            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400 border-b border-slate-800 pb-1">
+            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-gold-400 border-b border-slate-800 pb-1">
               PROFESSIONAL SUMMARY
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
@@ -149,7 +157,7 @@ CERTIFICATIONS
 
           {/* Education */}
           <div className="space-y-3">
-            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400 border-b border-slate-800 pb-1">
+            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-gold-400 border-b border-slate-800 pb-1">
               EDUCATION
             </h2>
             {EDUCATION.map((edu, idx) => (
@@ -159,7 +167,7 @@ CERTIFICATIONS
                   <div className="text-slate-400 text-xs">{edu.degree} {edu.field && `(${edu.field})`}</div>
                 </div>
                 <div className="text-right font-mono text-xs">
-                  <div className="text-cyan-300 font-semibold">{edu.period}</div>
+                  <div className="text-gold-400 font-semibold">{edu.period}</div>
                   <div className="text-emerald-400 font-bold">{edu.score}</div>
                 </div>
               </div>
@@ -168,7 +176,7 @@ CERTIFICATIONS
 
           {/* Technical Skills */}
           <div className="space-y-2">
-            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400 border-b border-slate-800 pb-1">
+            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-gold-400 border-b border-slate-800 pb-1">
               TECHNICAL SKILLS
             </h2>
             <div className="text-xs space-y-1.5 text-slate-300 leading-relaxed">
@@ -181,13 +189,13 @@ CERTIFICATIONS
 
           {/* Experience */}
           <div className="space-y-3">
-            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400 border-b border-slate-800 pb-1">
+            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-gold-400 border-b border-slate-800 pb-1">
               EXPERIENCE
             </h2>
             {EXPERIENCES.map((exp, idx) => (
               <div key={idx} className="space-y-1.5 text-xs sm:text-sm">
                 <div className="flex justify-between items-center">
-                  <span className="font-bold text-white">{exp.company} — <span className="font-normal text-cyan-300">{exp.role}</span></span>
+                  <span className="font-bold text-white">{exp.company} &mdash; <span className="font-normal text-gold-300">{exp.role}</span></span>
                   <span className="text-xs font-mono text-slate-400">{exp.period}</span>
                 </div>
                 <ul className="space-y-1 pl-4 list-disc text-xs text-slate-300">
@@ -201,17 +209,17 @@ CERTIFICATIONS
 
           {/* Projects */}
           <div className="space-y-4">
-            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400 border-b border-slate-800 pb-1">
+            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-gold-400 border-b border-slate-800 pb-1">
               KEY PROJECTS
             </h2>
             {PROJECTS.map((proj, idx) => (
               <div key={idx} className="space-y-1 text-xs sm:text-sm">
                 <div className="flex justify-between items-center">
                   <span className="font-bold text-white">{proj.title} <span className="text-xs font-normal text-slate-400">({proj.role})</span></span>
-                  <span className="text-xs font-mono text-cyan-300">{proj.period}</span>
+                  <span className="text-xs font-mono text-gold-300">{proj.period}</span>
                 </div>
                 {proj.liveUrl && (
-                  <div className="text-[11px] font-mono text-cyan-400">
+                  <div className="text-[11px] font-mono text-gold-400">
                     Live Demo: <a href={proj.liveUrl} target="_blank" rel="noreferrer" className="underline">{proj.liveUrl}</a>
                   </div>
                 )}
@@ -226,7 +234,7 @@ CERTIFICATIONS
 
           {/* Certifications */}
           <div className="space-y-2">
-            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400 border-b border-slate-800 pb-1">
+            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-gold-400 border-b border-slate-800 pb-1">
               CERTIFICATIONS & LEADERSHIP
             </h2>
             <ul className="space-y-1.5 pl-4 list-disc text-xs text-slate-300">
