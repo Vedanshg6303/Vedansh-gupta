@@ -1,36 +1,24 @@
 %-------------------------
-% Resume in LaTeX (Full-Page ATS-Optimized Layout)
+% Resume in LaTeX (Guaranteed Clean 1-Page Layout)
 % Author: Vedansh Gupta
-% Template: Jake's ATS-Friendly Template (Calibrated for Complete 1-Page Coverage)
+% Template: Jake's ATS-Friendly Template (Clean & Simple 1-Page Format)
 % License: MIT
 %-------------------------
 
 \documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
-\usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage[top=0.45in, bottom=0.45in, left=0.5in, right=0.5in]{geometry}
 
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Balanced 0.5in margins to fill the complete letter sheet top-to-bottom
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-0.52in}
-\addtolength{\textheight}{1.08in}
+\pagestyle{empty}
 
 \urlstyle{same}
 
@@ -40,18 +28,18 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-2pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{3pt}]
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
 
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-1pt}}
+    {#1 \vspace{-1.5pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{1pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -59,14 +47,14 @@
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-  \vspace{1pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
       #1 & #2 \\
     \end{tabular*}\vspace{-4pt}
 }
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
@@ -87,14 +75,6 @@
     Kanpur, UP
 \end{center}
 
-%-----------PROFESSIONAL SUMMARY-----------
-\section{Professional Summary}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     Final-year Computer Science and Engineering student at PSIT Kanpur specializing in Cybersecurity and Full-Stack Web Development. Proficient in architecting scalable distributed applications, building identity-gated biometric authentication layers, and leading cross-functional technical and cultural initiatives. Combines practical software engineering velocity with defensive security protocols.
-    }}
- \end{itemize}
-
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -110,9 +90,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C++, Java, Python, JavaScript (ES6+), TypeScript, HTML5, CSS3, SQL} \\
-     \textbf{Frontend \& Backend}{: React.js (v18), Node.js, Express.js, RESTful APIs, WebSockets (Socket.io), MongoDB, MySQL, Tailwind CSS, Vite} \\
-     \textbf{Cybersecurity \& CS Core}{: Biometric Auth, Zero-Trust Architecture, JWT, RBAC, Data Structures \& Algorithms, OOPS, DBMS, OS, TCP/IP} \\
+     \textbf{Languages}{: C++, Java, Python, JavaScript (ES6+), TypeScript, HTML5, CSS3, SQL} \\[1pt]
+     \textbf{Frontend \& Backend}{: React.js (v18), Node.js, Express.js, RESTful APIs, WebSockets (Socket.io), MongoDB, MySQL, Tailwind CSS} \\[1pt]
+     \textbf{Cybersecurity \& Core CS}{: Biometric Auth, Zero-Trust Architecture, JWT, RBAC, Data Structures \& Algorithms, OOPS, DBMS, OS, TCP/IP} \\[1pt]
      \textbf{Tools \& Cloud Platforms}{: Git, GitHub, VS Code, Postman, Vercel, Render, Linux CLI, Generative AI Tools}
     }}
  \end{itemize}
@@ -121,26 +101,24 @@
 \section{Key Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{\href{https://tridrishti-api.vercel.app}{\underline{Tridrishti}}} $|$ \emph{React 18, Node.js, Express, MongoDB, Socket.io, Tailwind CSS, Vite}}{2026}
+          {\textbf{\href{https://tridrishti-api.vercel.app}{\underline{Tridrishti}}} $|$ \emph{React 18, Node.js, Express, MongoDB, Socket.io, Vite}}{2026}
           \resumeItemListStart
-            \resumeItem{Architected an enterprise gamified community platform featuring 40+ dynamic routes, a 10-tier user progression matrix, and multi-role RBAC.}
-            \resumeItem{Engineered an automated double-entry ledger engine handling atomic reward point balances, downline network propagation, and claim audits.}
-            \resumeItem{Integrated real-time WebSockets (Socket.io) for live balance updates and downline tree sync; deployed live on Render and Vercel cloud.}
+            \resumeItem{Architected a gamified community platform with 40+ dynamic pages, a 10-tier progression matrix, and multi-role RBAC.}
+            \resumeItem{Engineered an atomic points ledger and real-time WebSocket sync for live downline tree updates and automated benefit claims.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/Vedanshg6303}{\underline{Guardian-ID}}} $|$ \emph{Python, Computer Vision, Biometrics, REST APIs, Cryptography}}{Feb 2026 -- Present}
+          {\textbf{\href{https://github.com/Vedanshg6303}{\underline{Guardian-ID}}} $|$ \emph{Python, Computer Vision, Biometrics, REST APIs}}{Feb 2026 -- Present}
           \resumeItemListStart
-            \resumeItem{Developed an identity-gated security layer designed to eliminate account takeover vulnerabilities in shared device digital payment environments.}
-            \resumeItem{Integrated real-time computer vision facial recognition coupled with multi-profile fingerprint validation for step-up transaction authorization.}
-            \resumeItem{Engineered zero-trust session validation tokens and modular RESTful middleware compatible with open-banking payment standards.}
+            \resumeItem{Developed an identity-gated security layer to mitigate account takeover risks in shared device digital payment environments.}
+            \resumeItem{Integrated real-time computer vision face recognition and multi-profile fingerprint validation for step-up transaction auth.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{\href{https://github.com/Vedanshg6303}{\underline{Interactive Music Web App}}} $|$ \emph{JavaScript, HTML5 Audio API, CSS3, Web Systems}}{Mar 2024 -- Jun 2024}
           \resumeItemListStart
-            \resumeItem{Architected a lightweight web audio streaming engine optimized for fluid cross-platform browser playback with zero audio buffering lag.}
-            \resumeItem{Implemented custom queue logic, timeline scrub controls, and responsive playlist state management utilizing native HTML5 Audio APIs.}
+            \resumeItem{Architected a lightweight web audio streaming engine optimized for fluid cross-platform browser playback with zero audio lag.}
+            \resumeItem{Implemented custom queue logic, timeline scrub controls, and responsive playlist management using native HTML5 Audio.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -152,7 +130,7 @@
       {Tech \& Management Intern}{Dec 2024 -- Mar 2025}
       \resumeItemListStart
         \resumeItem{Spearheaded targeted technical outreach campaigns across student developer communities, accelerating onboarding and user signups.}
-        \resumeItem{Assisted engineering squads with frontend UI enhancements, landing page components, and technical documentation using HTML, CSS, and Git.}
+        \resumeItem{Assisted with frontend UI enhancements, landing page components, and technical documentation using HTML, CSS, JavaScript, and Git.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -175,7 +153,7 @@
 \section{Certifications}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Infosys Technical Certification}{: Verified competencies in HTML, CSS, and structured Python 3 application development.} \\
+     \textbf{Infosys Technical Certification}{: Verified competencies in HTML, CSS, and structured Python 3 application development.} \\[1pt]
      \textbf{AI Tools Specialist (be10x)}{: Professional validation in deploying modern AI workflows to accelerate full-stack engineering cycles.}
     }}
  \end{itemize}
