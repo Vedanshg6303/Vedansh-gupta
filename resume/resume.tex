@@ -1,7 +1,7 @@
 %-------------------------
-% Resume in LaTeX (Overleaf Ready)
+% Resume in LaTeX (Guaranteed 1-Page Fit)
 % Author: Vedansh Gupta
-% Based on: Jake Gutierrez's ATS-Friendly Template
+% Template: Jake's ATS-Friendly Template
 % License: MIT
 %-------------------------
 
@@ -25,7 +25,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins for perfect 1-page fit
+% Tight margins for perfect 1-page fit
 \addtolength{\oddsidemargin}{-0.55in}
 \addtolength{\evensidemargin}{-0.55in}
 \addtolength{\textwidth}{1.1in}
@@ -40,18 +40,18 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-7pt}\scshape\raggedright\large
+  \vspace{-8pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-1.5pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1.5pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -59,7 +59,7 @@
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-  \vspace{-1.5pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
       #1 & #2 \\
     \end{tabular*}\vspace{-5pt}
@@ -81,8 +81,9 @@
     \small \textbf{Full-Stack Developer \& Cybersecurity Specialist} \\ \vspace{2pt}
     \small +91 63064 78673 $|$ 
     \href{mailto:vedanshg112@gmail.com}{\underline{vedanshg112@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/vedansh-gupta/}{\underline{linkedin.com/in/vedansh-gupta}} $|$ 
-    \href{https://github.com/Vedanshg6303}{\underline{github.com/Vedanshg6303}} $|$ 
+    \href{https://www.linkedin.com/in/vedansh-gupta/}{\underline{LinkedIn}} $|$ 
+    \href{https://github.com/Vedanshg6303}{\underline{GitHub}} $|$ 
+    \href{https://vedansh-gupta.vercel.app}{\underline{Portfolio}} $|$ 
     Kanpur, UP
 \end{center}
 
@@ -112,26 +113,23 @@
 \section{Key Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Tridrishti: Full-Stack Rewards \& Community Platform} $|$ \emph{React 18, Node.js, Express, MongoDB, Socket.io, Vite}}{2026}
+          {\textbf{\href{https://tridrishti-api.vercel.app}{\underline{Tridrishti}}} $|$ \emph{React 18, Node.js, Express, MongoDB, Socket.io, Vite}}{2026}
           \resumeItemListStart
-            \resumeItem{Architected an enterprise gamified networking platform with 40+ dynamic pages, 10-tier user progression, and role-based access control.}
-            \resumeItem{Engineered an automated double-entry ledger service recording atomic reward point balances, downline networks, and claim audits.}
-            \resumeItem{Integrated real-time WebSockets (Socket.io) for live point balance updates, downline tree synchronization, and admin interventions.}
-            \resumeItem{Deployed production full-stack architecture across Render (Node API) and Vercel (React SPA) with active CI/CD pipelines.}
+            \resumeItem{Architected a gamified community platform with 40+ dynamic pages, a 10-tier progression matrix, and multi-role RBAC.}
+            \resumeItem{Engineered an atomic points ledger and real-time WebSocket sync for live downline tree updates and automated benefit claims.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Guardian-ID: Multi-User Biometric UPI Security Framework} $|$ \emph{Python, Computer Vision, Biometrics, REST APIs}}{Feb 2026 -- Present}
+          {\textbf{\href{https://github.com/Vedanshg6303}{\underline{Guardian-ID}}} $|$ \emph{Python, Computer Vision, Biometrics, REST APIs}}{Feb 2026 -- Present}
           \resumeItemListStart
-            \resumeItem{Developed an identity-gated security layer to eliminate account takeover vulnerabilities in shared device payment environments.}
-            \resumeItem{Integrated real-time computer vision facial recognition and multi-profile fingerprint validation for step-up transaction authentication.}
-            \resumeItem{Engineered zero-trust session tokens and modular RESTful middleware compatible with open-banking payment standards.}
+            \resumeItem{Developed an identity-gated security layer mitigating account takeover risks in shared device digital payment environments.}
+            \resumeItem{Integrated real-time computer vision face recognition and multi-profile fingerprint validation for step-up transaction auth.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Interactive Music Web Application} $|$ \emph{JavaScript, HTML5 Audio API, CSS3, Web Systems}}{Mar 2024 -- Jun 2024}
+          {\textbf{\href{https://github.com/Vedanshg6303}{\underline{Interactive Music Web App}}} $|$ \emph{JavaScript, HTML5 Audio API, CSS3, Web Systems}}{Mar 2024 -- Jun 2024}
           \resumeItemListStart
-            \resumeItem{Architected a lightweight web audio streaming engine optimized for fluid cross-platform browser playback with zero latency.}
+            \resumeItem{Architected a lightweight web audio streaming engine optimized for fluid cross-platform browser playback with zero audio lag.}
             \resumeItem{Implemented custom queue logic, timeline scrub controls, and responsive playlist management using native HTML5 Audio.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
